@@ -10,20 +10,32 @@
         protected $params = [];
 
         public function __construct(){
-            // print_r($this->getUrl());
-        
+            
+            // Extract Controller from URL
             $url = $this->getUrl();
-            if(isset($url)){
+            if(isset($url[0])){
                 if(file_exists('../app/controllers/' . ucwords($url[0]) . '.php')){
                     $this->currentController = ucwords($url[0]);
                     unset($url[0]);
                 }
             }
 
-            // echo $this->currentController;
             require_once '../app/controllers/' . $this->currentController . '.php';
-
+            
             $this->currentController = new $this->currentController();
+
+              // Extract method from URL
+              if(isset($url[1])){
+                if(method_exists($this->currentController, $url[1])){
+                    $this->currentMethod = $url[1];
+                    unset($url[1]);
+                }
+            }
+
+            // Extract params from 
+            $this->params = $url ? array_values($url) : [];
+        
+            call_user_func_array([$this->currentController, $this->currentMethod], $this->params);
         }
 
         public function getUrl(){
