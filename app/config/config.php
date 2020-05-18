@@ -1,13 +1,13 @@
 <?php
     // DATABASE
     define('DB_HOST', 'localhost');
-    define('DB_USER', 'root');
-    define('DB_PASS', '12345');
-    define('DB_NAME', 'family');
+    define('DB_USER', ' '); // Input your database user name 
+    define('DB_PASS', ' '); // Input your database password
+    define('DB_NAME', ' '); // Input your database name
 
     // APP
     define('APPROOT', dirname(dirname(__FILE__)));
-    define('URLROOT', 'http://localhost:8081/php_mvc_framework');
-    define('SITENAME', 'SharePost');
+    define('URLROOT', 'INPUT_YOUR_URL ');
+    define('SITENAME', 'INPUT_YOUR_SITENAME');
 
 ?>
