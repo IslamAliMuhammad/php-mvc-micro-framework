@@ -7,7 +7,7 @@
 
     // APP
     define('APPROOT', dirname(dirname(__FILE__)));
-    define('URLROOT', 'INPUT_YOUR_URL ');
-    define('SITENAME', 'INPUT_YOUR_SITENAME');
+    define('URLROOT', ' '); //Input your url
+    define('SITENAME', ' '); // Input your sitename
 
 ?>
