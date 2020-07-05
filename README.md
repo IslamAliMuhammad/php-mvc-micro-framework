@@ -54,7 +54,7 @@ PHP FRAMEWORK that built upon MVC workflow
 
  1. Change the root folder with your desire name.
  2. Navigate to app/config/config.php and input your configurations.
- 3. Navigate to the public folder, select .htaccess file and in RewriteBase /php_mvc_framework/public change /php_mvc_framework/ to your root folder name.
+ 3. Navigate to the public folder, select .htaccess file and in RewriteBase /PHP-MVC-FRAMEWORK/public change /PHP-MVC-FRAMEWORK/ to your root folder name.
  4. Instantiate the model you created inside corresponding controller constructor throw model($model) method which is part of the Controller base class.
 
  #### Utilize your database
