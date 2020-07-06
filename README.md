@@ -50,6 +50,10 @@ PHP FRAMEWORK that built upon MVC workflow
 
 ### Start building upon the framework
 
+#### Project as a guide 
+
+[POST-APP](https://github.com/IslamAliMuhammad/POST-APP) you can use this project as a reference to use the framework. 
+
 #### Configure your app
 
  1. Change the root folder with your desire name.
