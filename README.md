@@ -1,6 +1,6 @@
-# PHP MVC FRAMEWORK
+# PHP MVC micro-framework
 
-PHP FRAMEWORK that built upon MVC workflow 
+PHP micro-framework that built upon MVC workflow .
 
 ## Getting Started
 
